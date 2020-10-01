@@ -7,13 +7,14 @@
     android:orientation="vertical"
     android:padding="10dp"
     android:gravity="center"
-    android:background="@android:color/holo_orange_light"
+    android:background="#B2DFDB"
     tools:context=".MainActivity">
 
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:progressBackgroundTint="@android:color/black"
         android:max="100"/>
 
     <TextView
@@ -21,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0/100"
+        android:textColor="@android:color/black"
         android:fontFamily="sans-serif-medium"
         android:textSize="25sp"
         android:layout_gravity="end"
@@ -38,6 +40,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Increase"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
             android:textSize="25sp"/>
 
         <Button
@@ -46,11 +51,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Decrease"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
             android:textSize="25sp"/>
-
-        
     </LinearLayout>
-
-
-
 </LinearLayout>
